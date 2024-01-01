@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>validator/sweetalert</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container right-panel-active">
+      <!-- Sign Up -->
+      <div class="container__form container--signup">
+        <form action="#" class="form" id="form1">
+          <span id="warning"></span>
+          <h2 class="form__title">Sign Up</h2>
+          <div class="input__group">
+            <div class="error__output"></div>
+            <input type="text" placeholder="User" class="input" id="name" />
+          </div>
+          <div class="input__group">
+            <div class="error__output"></div>
+            <input type="email" placeholder="Email" class="input" id="email" />
+          </div>
+          <div class="input__group">
+            <div class="error__output"></div>
+            <input
+              type="password"
+              placeholder="Password"
+              class="input"
+              id="password"
+            />
+
+            <label for="showPassword" class="icon" id="show__password"
+              ><i class="fas fa-eye"></i
+            ></label>
+          </div>
+          <button class="btn">Sign Up</button>
+        </form>
+      </div>
+
+      <!-- Sign In -->
+      <div class="container__form container--signin">
+        <form action="#" class="form" id="form2">
+          <h2 class="form__title">Sign In</h2>
+          <input type="email" placeholder="Email" class="input" />
+          <input type="password" placeholder="Password" class="input" />
+          <a href="#" class="link">Forgot your password?</a>
+          <button class="btn">Sign In</button>
+        </form>
+      </div>
+
+      <!-- Overlay -->
+      <div class="container__overlay">
+        <div class="overlay">
+          <div class="overlay__panel overlay--left">
+            <button class="btn" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay__panel overlay--right">
+            <button class="btn" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
